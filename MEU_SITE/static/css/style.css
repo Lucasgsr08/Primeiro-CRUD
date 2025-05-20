@@ -1,0 +1,82 @@
+/* Zera a margem e o padding padrão de todos os elementos e usa box-sizing para facilitar o layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estiliza o corpo do site com fonte padrão e espaçamento agradável */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Estiliza o cabeçalho (menu) fixando no topo da tela */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0); /* cor com transparência */
+    z-index: 1000; /* garante que fique acima dos outros elementos */
+}
+
+/* Estiliza o conteúdo do menu de navegação */
+nav {
+    display: flex; /* alinha os elementos lado a lado */
+    justify-content: space-between; /* espaçamento entre logo e menu */
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+/* Logo do site */
+nav .logo {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+/* Lista de links do menu */
+nav .menu {
+    list-style: none; /* remove bolinhas da lista */
+    display: flex;
+    gap: 1.5rem; /* espaço entre os itens */
+}
+
+/* Links do menu */
+nav .menu li a {
+    color: white;
+    text-decoration: none; /* remove sublinhado */
+    font-weight: bold;
+}
+
+/* Seção principal com imagem de fundo e altura de 100% da tela */
+.hero {
+    height: 100vh;
+    background: url("../img/background.jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Camada escura sobre a imagem para facilitar a leitura do texto */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+/* Seções de conteúdo (Sobre, Contato) */
+.content {
+    padding: 5rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Rodapé do site */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #333;
+    color: white;
+}

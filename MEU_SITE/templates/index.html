@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Define o idioma do site como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define o padrão de codificação para suportar acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o site responsivo -->
+    <title>ALOOOU</title> <!-- Título que aparece na aba do navegador -->
+
+    <!-- Importa o arquivo CSS que está na pasta static/css/style.css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Cabeçalho fixo com menu de navegação -->
+    <header>
+        <nav>
+            <div class="logo">Meu Site</div> <!-- Nome ou logotipo do site -->
+            <ul class="menu"> <!-- Lista com os links do menu -->
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção principal com imagem de fundo -->
+    <section id="inicio" class="hero">
+        <div class="overlay"> <!-- Camada escura sobre a imagem para melhorar a leitura do texto -->
+            <h1>Bem-vindo ao meu site</h1>
+            <p>PRIMEIRO SITE CRIADO, COM FOCO NO APRENDIZADO.</p>
+        </div>
+    </section>
+
+    <!-- Seção "Sobre" -->
+    <section id="sobre" class="content">
+        <h2>Sobre</h2>
+        <p>Algumas informações sobre o site, produto ou serviço.</p>
+    </section>
+
+    <!-- Seção "Contato" -->
+    <section id="contato" class="content">
+        <h2>Contato</h2>
+        <p>Coloque aqui seu e-mail ou formulário de contato.</p>
+    </section>
+
+    <!-- Rodapé do site -->
+    <footer>
+        <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
